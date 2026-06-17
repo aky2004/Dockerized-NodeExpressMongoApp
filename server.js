@@ -1,5 +1,5 @@
 const express = require('express');
-const { MongoClient } = require('mongodb');
+const  MongoClient } = require('mongodb');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,7 +17,7 @@ async function connectMongo() {
   try {
     const client = new MongoClient(MONGO_URI);
     await client.connect();
-    db = client.db();
+    db = client.db(DB_NAME);
     console.log('Connected to MongoDB');
   } catch (error) {
     console.error('MongoDB connection error:', error);
