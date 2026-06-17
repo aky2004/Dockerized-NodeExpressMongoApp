@@ -37,6 +37,7 @@ A modern Docker + Compose setup demonstrating containerized Node.js applications
 │  └───────────────────┘                      │
 │                                             │
 └─────────────────────────────────────────────┘
+
 ```
 
 ### 📦 Services Breakdown
